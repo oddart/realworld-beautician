@@ -6,6 +6,10 @@
   margin: 1em 0 1em 0;
 }
 
+.twin-inverse {
+  margin: 1em 3em 1em 3em;
+}
+
 h3, h4, .fab {
   color: #fff;
   font-weight: bold;
