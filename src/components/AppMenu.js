@@ -7,6 +7,7 @@ import { NavItem } from 'react-bootstrap';
 import '../App.css';
 
 import Services from './views/services';
+import Gallery from './views/gallery';
 import Info from './views/info';
 
 export default class AppMenu extends Component {
@@ -27,6 +28,9 @@ export default class AppMenu extends Component {
                   <Link to="/">Home</Link>
                 </NavItem>
                 <NavItem>
+                  <Link to="/gallery">Gallery</Link>
+                </NavItem>
+                <NavItem>
                   <Link to="/contact">Contact Us</Link>
                 </NavItem>
               </Nav>
@@ -34,6 +38,7 @@ export default class AppMenu extends Component {
           </Navbar>
 
           <Route exact path="/" component={Services} />
+          <Route path="/gallery" component={Gallery} />
           <Route path="/contact" component={Info} />
 
         </div>
